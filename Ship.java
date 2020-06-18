@@ -50,9 +50,9 @@ public abstract class Ship {
     //abstract method therefore no body, must be implemented by other
     public abstract String getShipType();
 
-    /*
+    /**
      * returns true if it is ok to put a ship of this length with its bow in this location, 
-     * with the given orientation, returns false otherwise. Ahip cannot:
+     * with the given orientation, returns false otherwise. A ship cannot:
      * 		overlap another,
      * 		or touch another ship (vert., horiz., diagon.), 
      * 		and must not stick out beyond the array. 
@@ -98,7 +98,7 @@ public abstract class Ship {
 	return true;
     }
 
-    /*
+    /**
      * puts the ship in the ocean
      * giving values to instance variables of ship: bowRow, bowColumn, and horizontal
      * putting a reference to the ship in each of 1 or more locations (up to 8) in the ships array in the ocean object
@@ -119,7 +119,7 @@ public abstract class Ship {
     }
 
 
-    /*
+    /**
      * If a part of the ship occupies the given row and column, and the ship hasn’t been sunk, 
      * mark that part of the ship as ”hit” (in the hit array, 0 indicates the bow) and return true, 
      * otherwise return false.
@@ -137,7 +137,7 @@ public abstract class Ship {
 	return false;
     }
 
-    /*
+    /**
      * return true if every part of the ship has been hit, false otherwise
      */
     public boolean isSunk() {
@@ -149,7 +149,7 @@ public abstract class Ship {
 	return true;
     }
 
-    /*
+    /**
      * return a single-char string to use in the Ocean's print method
      * "S" not sunken ship (fired upon and hit a real ship) 
      * "x" sunken ship

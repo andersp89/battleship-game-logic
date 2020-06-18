@@ -9,14 +9,13 @@ import java.util.Arrays;
  *
  */
 public class EmptySea extends Ship {
-    //constructor, 
     public EmptySea() {
 	this.setLength(1);
 	this.setHit(new boolean[1]);
 	Arrays.fill(this.getHit(),  false);
     }
 
-    /*
+    /**
      * always return false to indicate that nothing was hit
      */
     @Override
@@ -26,7 +25,7 @@ public class EmptySea extends Ship {
 	return false;
     }
 
-    /*
+    /**
      * always return false to indicate that you didn't sink anything
      */
     @Override
@@ -34,7 +33,7 @@ public class EmptySea extends Ship {
 	return false;
     }
 
-    /*
+    /**
      * return a single char String to use in the Ocean's print method
      * you could choose to have an unoccupied sea in many ways
      */
@@ -43,7 +42,7 @@ public class EmptySea extends Ship {
 	return this.getHit()[0] ? "-" : ".";
     }
 
-    /*
+    /**
      *  returns the string empty
      */
     @Override

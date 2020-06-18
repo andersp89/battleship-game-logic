@@ -6,10 +6,6 @@ import java.util.Arrays;
  * @author anderspedersen
  */
 public class BattleShip extends Ship {
-    /* 
-     * each of the sub classes has a constructor, to set length to correct value and to initialize the hit array.
-     * and override the "getShipType".
-     */
     public BattleShip() {
 	this.setLength(8);
 	this.setHit(new boolean[8]);

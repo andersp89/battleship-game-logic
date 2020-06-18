@@ -7,10 +7,6 @@ import java.util.Arrays;
  *
  */
 public class BattleCruiser extends Ship {
-    /* 
-     * each of the sub classes has a constructor, to set length to correct value and to initialize the hit array.
-     * and override the "getShipType"
-     */
     public BattleCruiser() {
 	this.setLength(7);
 	this.setHit(new boolean[7]);

@@ -31,7 +31,7 @@ public class Ocean {
 
     //methods
 
-    /*
+    /**
      * Place all ships randomly on the initially empty ocean. Place larger before smaller ones.
      * Use random class in java.util package.
      * Ship quantity and type:
@@ -74,7 +74,7 @@ public class Ocean {
 	}
     }
 
-    /*
+    /**
      * returns true if the given location contains a ship, false if not.
      */
     public boolean isOccupied(int row, int column) {
@@ -85,7 +85,7 @@ public class Ocean {
 	}
     }
 
-    /*
+    /**
      * Returns true if the given location contains a ”real” ship, still afloat, (not an EmptySea), false if it does not. 
      * In addition, this method updates the number of shots that have been fired, and the number of hits. 
      * Note: If a location contains a ”real” ship, shootAt should return true every time the user shoots at that same location. 
@@ -111,28 +111,28 @@ public class Ocean {
 	}
     }
 
-    /*
+    /**
      * returns the number of shots fired in this game
      */
     public int getShotsFired() {
 	return shotsFired;
     }
 
-    /*
+    /**
      * returns the number of hits recorded in this game. All hits counted, not just the first time a given square is hit
      */
     public int getHitCount() {
 	return hitCount;
     }
 
-    /*
+    /**
      * return number of ships sunk
      */
     public int getShipsSunk() {
 	return shipsSunk;
     }
 
-    /*
+    /**
      * return true if all ships have been sunk
      */
     public boolean isGameOver() {
@@ -143,7 +143,7 @@ public class Ocean {
 	}
     }
 
-    /*
+    /**
      * returns the 20x20 array of ships.
      * methods of other classes are going to modify array. 
      * While it is undesirable to do so, sometimes there is no good alternative
@@ -152,7 +152,7 @@ public class Ocean {
 	return ships;
     }
 
-    /*
+    /**
      * print the ocean
      * row numbers from 00 till 19 along left edge of array
      * column numbers from 00 till 19 along the top
